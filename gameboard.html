@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+    }
+
+    body {
+        background: linear-gradient(to bottom left, #9900ff 33%, #3366ff 100%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 25px;
+        color: white;
+        margin-bottom: 20px;
+        background-color: #545454;
+        padding: 10px 20px;
+        border-radius: 40px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .gameboard {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+    }
+    .gameboardrow {
+        display: flex;
+        flex-direction: row;
+    }
+    .box{
+        /* background-color: green; */
+        width: 150px;
+        height: 150px;
+        /* margin: 20px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+    .vr{
+        width: 6px;
+        height: 150px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .hr{
+        height: 6px;
+        width: 462px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    /* 150 6 150 6 150 */
+
+    .scroreboard{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: flex;
+    }
+
+    .score{
+        background-color: white;
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 40px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 18px;
+    }
+    .btn{
+        background-color: white;
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 40px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        width: 150px;
+    }
+
+    .bottombtns{
+position: absolute;
+bottom: 20px;
+    }
+</style>
+
+<body>
+    <div class="scroreboard">
+        <p class="score">HARSHAL - 3 </p>
+        <p class="score">VIRAJ - 0 </p>
+    </div>
+    <h1>TURN - Harshal X</h1>
+    <div class="gameboard">
+        <div class="gameboardrow">
+            <div class="box" id="box1">X</div>
+            <div class="vr"></div>
+            <div class="box" id="box2">O</div>
+            <div class="vr"></div>
+            <div class="box" id="box3">O</div>
+        </div>
+        <div class="hr"></div>
+        <div class="gameboardrow">
+            <div class="box" id="box4">O</div>
+            <div class="vr"></div>
+            <div class="box" id="box5">X</div>
+            <div class="vr"></div>
+            <div class="box" id="box6">X</div>
+        </div>
+        <div class="hr"></div>
+        <div class="gameboardrow">
+            <div class="box" id="box7">O</div>
+            <div class="vr"></div>
+            <div class="box" id="box8">O</div>
+            <div class="vr"></div>
+            <div class="box" id="box9">O</div>
+        </div>
+    </div>
+
+    <div class="bottombtns">
+        <button class="btn" id="newgame"
+         onclick="window.location.href='/index.html'"
+        >Quit</button>
+        <button class="btn" id="reset">Reset</button>
+    </div>
+</body>
+</body>
+
+</html>
