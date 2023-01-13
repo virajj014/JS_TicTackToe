@@ -122,13 +122,15 @@
             alert("Player Name Should be Different")
         }
 
-        localStorage.setItem('playerx', document.getElementById('playerx').value)
-        localStorage.setItem('playero', document.getElementById('playero').value)
-        localStorage.setItem('playerxscore', 0)
-        localStorage.setItem('playeroscore', 0)
+        else {
+            localStorage.setItem('playerx', document.getElementById('playerx').value)
+            localStorage.setItem('playero', document.getElementById('playero').value)
+            localStorage.setItem('playerxscore', 0)
+            localStorage.setItem('playeroscore', 0)
 
 
-        window.location.href = "/gameboard.html"
+            window.location.href = "/gameboard.html"
+        }
 
     }
 </script>
